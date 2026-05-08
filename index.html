@@ -208,6 +208,10 @@
     transition: transform 0.2s;
     color: var(--text);
   }
+  .project-featured {
+    grid-column: span 2;
+    background: var(--surface);
+  }
   .project-card.featured {
     grid-column: span 2;
     display: grid;
@@ -405,10 +409,32 @@
 <section id="projects">
   <div class="section-header">
     <h2 class="section-title">Projects</h2>
-    <span class="section-num">01 / 04</span>
+    <span class="section-num">01 / 05</span>
   </div>
 
   <div class="projects-grid">
+
+    <!-- KoreanLive - featured full width -->
+    <a class="project-card project-featured" href="https://koreanlive.live" target="_blank">
+      <div>
+        <p class="project-tag">Personal Project</p>
+        <h3 class="project-name" style="font-size:2rem;">KoreanLive</h3>
+        <p class="project-desc" style="max-width:560px;">
+          네이티브 한국어 튜터와 1:1 화상 수업을 연결하는 플랫폼. 튜터 탐색·필터링, 크레딧 기반 결제 시스템, 브라우저 내 영상 세션까지 구현한 풀 SaaS 서비스.
+        </p>
+        <div class="project-stack">
+          <span class="stack-tag">Next.js</span>
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">TypeScript</span>
+          <span class="stack-tag">결제 시스템</span>
+          <span class="stack-tag">Vercel</span>
+        </div>
+      </div>
+      <div class="project-footer" style="margin-top:1.5rem;">
+        <span class="project-url">koreanlive.live</span>
+        <span class="project-arrow">↗</span>
+      </div>
+    </a>
 
     <!-- Trove -->
     <div class="project-card">
